@@ -21,5 +21,8 @@
   "homepage": "https://github.com/YoungGary/VueButton#readme",
   "dependencies": {
     "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.9.7"
   }
 }
