@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Button</title>
     <style>
         *{
             margin:0;
@@ -24,40 +24,11 @@
             --border-color-hover:#666;
         }
     </style>
-    <style>
-        .g-button{
-            font-size:var(--font_size);
-            height:var(--button-height);
-            padding:0 1em;
-            border-radius: var(--border-radius);
-            border:1px solid var(--border-color);
-            background: var(--button-bg);
-        }
-        .g-button:hover{
-            border-color: var(--border-color-hover);
-        }
-        .g-button:active{
-            background: var(--button-active-bg);
-        }
-        .g-button:focus{
-            outline: none;
-        }
-    </style>
 </head>
 <body>
 <div id="app">
     <g-button></g-button>
 </div>
-
-<script src="./node_modules/vue/dist/vue.min.js"></script>
-<script src="./button.js"></script>
-<script>
-    new Vue({
-        el:'#app',
-        data:{
-            message:'111'
-        }
-    })
-</script>
+<script src="./src/app.js"></script>
 </body>
 </html>
