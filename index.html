@@ -30,11 +30,12 @@
 </head>
 <body>
 <div id="app">
-    <g-button icon="icon-shezhi" position="right">提交</g-button>
-    <g-button icon="icon-shezhi" position="left">提交</g-button>
-    <g-button icon="icon-shezhi" >提交</g-button>
+    <g-button icon="icon-setting" :loading="true">设置</g-button>
+    <g-button icon="icon-right" :loading="true"  position="right">向后</g-button>
+    <g-button icon="icon-left" >向前</g-button>
+    <g-button icon="icon-loading"   :loading="loading" @click="loading = !loading">加载中</g-button>
 </div>
 <script src="./src/app.js"></script>
-<script src="//at.alicdn.com/t/font_752186_2rj8a4dvv56.js"></script>
+<script src="//at.alicdn.com/t/font_752186_05pb9j7bur9x.js"></script>
 </body>
 </html>
