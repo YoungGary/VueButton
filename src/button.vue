@@ -8,7 +8,14 @@
 
 <script>
 export default{
-    props:['icon','position']
+//    props:['icon','position']
+    props:{
+        icon:{},
+        position:{
+            default:'left',
+            type:String
+        }
+    }
 }
 </script>
 
