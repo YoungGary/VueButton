@@ -17,7 +17,7 @@ new Vue({
     }
 })
 
-//单元测试
+//单元测试 chai
 import chai from 'chai'
 const expect = chai.expect;
 const  constrcuter = Vue.extend(button);
@@ -32,3 +32,12 @@ const  constrcuter = Vue.extend(button);
  expect(href).to.eq('#icon-setting');
 
 
+// chai spies 监听函数的调用
+import spies from 'chai-spies'
+chai.use(spies)
+let spy =chai.spy(function () {
+    console.log(222)
+});
+vm.$on('click',spy)
+vm.$el.click()
+expect(spy).to.have.been.called();
